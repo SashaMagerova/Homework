@@ -1,0 +1,15 @@
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\bin\Debug\net6.0\Lesson1.exe
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\bin\Debug\net6.0\Lesson1.deps.json
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\bin\Debug\net6.0\Lesson1.runtimeconfig.json
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\bin\Debug\net6.0\Lesson1.dll
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\bin\Debug\net6.0\Lesson1.pdb
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\obj\Debug\net6.0\Lesson1.csproj.AssemblyReference.cache
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\obj\Debug\net6.0\Lesson1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\obj\Debug\net6.0\Lesson1.AssemblyInfoInputs.cache
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\obj\Debug\net6.0\Lesson1.AssemblyInfo.cs
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\obj\Debug\net6.0\Lesson1.csproj.CoreCompileInputs.cache
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\obj\Debug\net6.0\Lesson1.dll
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\obj\Debug\net6.0\refint\Lesson1.dll
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\obj\Debug\net6.0\Lesson1.pdb
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\obj\Debug\net6.0\Lesson1.genruntimeconfig.cache
+C:\Users\admin\OneDrive\Desktop\Homework\Lesson1\obj\Debug\net6.0\ref\Lesson1.dll
