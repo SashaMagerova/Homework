@@ -1,19 +1,14 @@
-﻿// Задача4
+﻿// Задача6
 
-int a, b, c;
-
-Console.Write($"Введите первое число: ");
+int a;
+Console.Write($"Введите число: ");
 int.TryParse(Console.ReadLine()!, out a);
-Console.Write($"Введите второе число: ");
-int.TryParse(Console.ReadLine()!, out b);
-Console.Write($"Введите третье число: ");
-int.TryParse(Console.ReadLine()!, out c);
 
-int max = a;
-if (b > max)
-    max = b; 
-if (c > max)
-    max = c; 
-    
-Console.Write($"{max}");  
-
+if (a % 2 == 0)
+{
+Console.Write($"Да");
+}
+else
+{
+ Console.Write($"Нет");   
+}
