@@ -1,14 +1,14 @@
-﻿// Задача6
+﻿// Задача8
 
-int a;
+int N;
 Console.Write($"Введите число: ");
-int.TryParse(Console.ReadLine()!, out a);
+int.TryParse(Console.ReadLine()!, out N);
 
-if (a % 2 == 0)
+int index = 2;
+
+while (index <= N)
 {
-Console.Write($"Да");
-}
-else
-{
- Console.Write($"Нет");   
-}
+  if (index % 2 == 0);
+      Console.Write($"{index} ");
+      index += 2;
+}      
