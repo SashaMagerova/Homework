@@ -1,14 +1,22 @@
-﻿// Задача10
+﻿// Задача13
 
 int N;
 Console.Write($"Введите число: ");
 int.TryParse(Console.ReadLine()!, out N);
 
-int B;
-B = N / 10;
+if (N < 100)
+{
+    Console.WriteLine($"Третьей цифры нет");
+}
+else 
+{
+    while (N >= 1000)
+    {
+        N = N /10;
+    }
+}
 
 int C;
-C = B % 10;
+C = N % 10;
 Console.WriteLine($"{C}");
-
 
