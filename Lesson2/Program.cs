@@ -1,22 +1,27 @@
-﻿// Задача13
+﻿// Задача15
 
-int N;
-Console.Write($"Введите число: ");
+/* int N;
+Console.Write($"Введите цифру: ");
 int.TryParse(Console.ReadLine()!, out N);
 
-if (N < 100)
+if (N > 5)
 {
-    Console.WriteLine($"Третьей цифры нет");
+    Console.WriteLine($"да");
 }
-else 
+else
 {
-    while (N >= 1000)
-    {
-        N = N /10;
-    }
+    Console.WriteLine($"нет");
+} */
+
+int N;
+Console.Write($"Введите цифру: ");
+int.TryParse(Console.ReadLine()!, out N);
+
+if (N % 6 == 0 || N % 7 == 0 )
+{
+    Console.WriteLine($"да");
 }
-
-int C;
-C = N % 10;
-Console.WriteLine($"{C}");
-
+else
+{
+    Console.WriteLine($"нет");
+}
