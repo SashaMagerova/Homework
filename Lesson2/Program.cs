@@ -7,6 +7,7 @@ int.TryParse(Console.ReadLine()!, out N);
 if (N < 100)
 {
     Console.WriteLine($"Третьей цифры нет");
+    return;
 }
 else 
 {
