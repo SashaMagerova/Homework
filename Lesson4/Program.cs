@@ -1,19 +1,15 @@
-﻿// Задача25
+﻿// Задача27
 
-int A, B;
-Console.Write($"Введите число A: ");
+int A;
+Console.Write($"Введите число: ");
 int.TryParse(Console.ReadLine()!, out A);
-Console.Write($"Введите число B: ");
-int.TryParse(Console.ReadLine()!, out B);
 
-if (B == 0)
-    Console.Write(1);
+int b = A;
+int sum = 0;
 
-else
+while (b > 0)
 {
-    int res = 1;
-    for (int i = 0; i < B; i++)
-         res *= A;
-         Console.Write(res);
+    sum = sum + b % 10;
+    b = b / 10;
 }
-
+Console.Write($"{A} --> {sum}");
