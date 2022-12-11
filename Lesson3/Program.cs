@@ -1,14 +1,19 @@
-﻿// Задача19
+﻿// Задача21
 
-int A;
-Console.Write($"Введите 5ти значное число: ");
-int.TryParse(Console.ReadLine()!, out A);
+int xa, xb, ya, yb, za, zb;
+Console.Write($"Введите координату X точки А: ");
+int.TryParse(Console.ReadLine()!, out xa);
+Console.Write($"Введите координату Y точки А: ");
+int.TryParse(Console.ReadLine()!, out ya);
+Console.Write($"Введите координату Z точки А: ");
+int.TryParse(Console.ReadLine()!, out za);
+Console.Write($"Введите координату X точки B: ");
+int.TryParse(Console.ReadLine()!, out xb);
+Console.Write($"Введите координату Y точки B: ");
+int.TryParse(Console.ReadLine()!, out yb);
+Console.Write($"Введите координату Z точки B: ");
+int.TryParse(Console.ReadLine()!, out zb);
 
+double res = Math.Sqrt((xa-xb)*(xa-xb)+(ya-yb)*(ya-yb)+(za-zb)*(za-zb));
+Console.Write($"Расстояние между точками A и B = {res}");
 
-string A1 = A.ToString();
-
-if ( A1[0] == A1[4] && A1[1] == A1[3])
-    Console.WriteLine($"Да");
-
-else 
-    Console.WriteLine($"Нет"); 
