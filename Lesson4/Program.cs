@@ -1,15 +1,10 @@
-﻿// Задача27
+﻿// Задача29
 
-int A;
-Console.Write($"Введите число: ");
-int.TryParse(Console.ReadLine()!, out A);
+int[] array = new int[8];
 
-int b = A;
-int sum = 0;
-
-while (b > 0)
+for (int i = 0; i < array.Length; i++)
 {
-    sum = sum + b % 10;
-    b = b / 10;
+    array[i] = new Random().Next(15);
+    Console.Write($"{array[i]} ");
 }
-Console.Write($"{A} --> {sum}");
+
