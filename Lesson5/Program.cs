@@ -1,18 +1,23 @@
-﻿// Задача36
+﻿// Задача38
 
-int[] array = new int[5];
+double[] array = new double[6];
 
 for (int i = 0; i < array.Length; i++)
-     array [i] = new Random().Next(-20,30);     
+     array [i] = new Random().Next(1,100);     
 Print(array);
 
-int sum = 0;
-for (int i = 1; i < array.Length; i+=2)
-     sum = sum + array[i];
-Console.Write($"{sum}");
+double min = array[0];
+double max = array[0];
+
+for (int i = 0; i < array.Length; i++)
+    if (array[i] > max)
+         max = array[i];
+    else if (array[i] < min)
+          min = array[i];
+Console.Write($"{max} - {min} = {max - min} ");
 
 
-void Print(int[] arr)
+void Print(double[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
          Console.Write($"{arr[i]} ");
