@@ -1,20 +1,15 @@
-﻿// Задача34
+﻿// Задача36
 
-int[] array = new int[4];
+int[] array = new int[5];
 
 for (int i = 0; i < array.Length; i++)
-     array [i] = new Random().Next(100,1000);     
+     array [i] = new Random().Next(-20,30);     
 Print(array);
 
 int sum = 0;
-for (int i = 0; i < array.Length; i++)
-{
-    if (array[i] % 2 == 0)
-    {
-       sum +=1; 
-    }
-}
-Console.Write($"--> {sum} ");
+for (int i = 1; i < array.Length; i+=2)
+     sum = sum + array[i];
+Console.Write($"{sum}");
 
 
 void Print(int[] arr)
