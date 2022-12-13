@@ -1,18 +1,28 @@
-﻿// Задача41
+﻿// Задача43
 
-string[] numbers = Console.ReadLine()!.Split(' ');
-int[] array = new int[numbers.Length];
+double d1;
+Console.WriteLine($"Введите значение d1: ");
+double.TryParse(Console.ReadLine()!, out d1);
 
-for(int i = 0; i < numbers.Length; i++)
-    {
-        int.TryParse(numbers[i], out array[i]);
-        Console.Write($"{array[i]} ");
-    }
+double k1;
+Console.WriteLine($"Введите значение k1: ");
+double.TryParse(Console.ReadLine()!, out k1);
 
-int n = 0;
-foreach(var i in array)
-    if (i > 0)
-        n++;
+double b2;
+Console.WriteLine($"Введите значение b2: ");
+double.TryParse(Console.ReadLine()!, out b2);
 
-Console.Write($"\n{n} чисел больше 0");
+double k2;
+Console.WriteLine($"Введите значение k2: ");
+double.TryParse(Console.ReadLine()!, out k2);
 
+if (k2 != k1)
+{
+    double x = (b2 - d1) / (k1 - k2);
+    double y = k1 * x * d1;
+
+    Console.Write($"{x};{y}");
+}
+
+else 
+    Console.WriteLine($"Две прямые не пересекутся");
