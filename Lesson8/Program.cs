@@ -1,6 +1,6 @@
-﻿// Задача 54
+﻿// Задача 56
 
-int[,] array = new int[3,4];
+int[,] array = new int[4,4];
 
 for (int i = 0; i < array.GetLength(0); i++)
 {
@@ -13,28 +13,29 @@ for (int i = 0; i < array.GetLength(0); i++)
 }
 Console.WriteLine();
 
-for (int s = 0; s < array.GetLength(0); s++)
-{
-    for (int i = 0; i < array.GetLength(1); i++)
-    {
-        int k = array[s, i];
-        int j = i - 1;
+int imin = 0;
+int min = 0;
+for (int i = 0; i < array.GetLength(1); i++)
+     min += array[0, i];
 
-        while (j >= 0 && array[s, j] > k)
-        {
-            array [s, j + 1] = array [s, j];
-            array [s, j] = k;
-            j--;
-        }
+for (int i = 1; i < array.GetLength(0); i++)
+{
+    int sum = 0;
+    for (int j = 0; j < array.GetLength(1); j++)
+        sum += array[i, j];
+    if (sum < min)
+    {    
+        min = sum;
+        imin = i;
     }
 }
+Console.Write($"{imin}");
 
 
-
-for (int i = 0; i < array.GetLength(0); i++)
+/*for (int i = 0; i < array.GetLength(0); i++)
 {
     for (int j = 0; j < array.GetLength(1); j++)
         Console.Write($"{array[i, j]} ");
         Console.WriteLine();
-}
+} */
 
