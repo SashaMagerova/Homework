@@ -1,11 +1,11 @@
-﻿// Задача64
-int n = 10;
+﻿// Задача66
+int m = 1, n = 15;
 
-Console.Write($"{PrintNums(n, 1)}");
+Console.Write($"{Summ(m, n)}");
 
-string PrintNums(int left, int right)
+int Summ(int left, int right)
 {
-    if (left <= right)
-       return left.ToString();
-    return $"{left} {PrintNums(left - 1, right)}";  
+    if (left >= right)
+       return left;
+    return left + Summ(left + 1, right);   
 }
