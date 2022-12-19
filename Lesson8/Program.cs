@@ -1,28 +1,35 @@
-﻿// Задача 58
+﻿// Задача 60
 
-int[,] a = new int[2, 2] { { 2, 4 }, { 3, 2 } };
-int[,] b = new int[2, 2] { { 3, 4 }, { 3, 3 } };
-int[,] c = new int[a.GetLength(0), b.GetLength(1)];
+int[, ,] a = new int[2, 2, 2];
 
-for (int i = 0; i < c.GetLength(0); i++)
+int[] nums = new int[90];
+for (int i = 0; i < 90; i++)
+    nums[i] = i + 10;
+
+
+for (int i = 0; i < a.GetLength(0); i++)
 {
-    for (int j = 0; j < c.GetLength(1); j++)
+    for (int j = 0; j < a.GetLength(1); j++)
     {
-        int sum = 0;
-        for (int r = 0; r < a.GetLength(1); r++)
+        for (int c = 0; c < a.GetLength(2); c++)
         {
-           sum += a[i, r] * b[r, j];
+            int temp = new Random().Next(90);
+            while (nums[temp] == 0)
+                temp = new Random().Next(90);
+
+            a[i, j, c] = nums[temp];
+            nums[temp] = 0;
         }
-        c[i, j] = sum; 
     }
 }
 
-
-
-for (int i = 0; i < c.GetLength(0); i++)
-{
-    for (int j = 0; j < c.GetLength(1); j++)
-        Console.Write($"{c[i, j]} ");
+for (int i = 0; i < a.GetLength(0); i++)
+    for (int j = 0; j < a.GetLength(1); j++)
+    {
+        for (int c = 0; c < a.GetLength(2); c++)
+            Console.Write($"{a[i, j, c]}({i}, {j}, {c}) ");
         Console.WriteLine();
-} 
+    }        
+        
+    
 
