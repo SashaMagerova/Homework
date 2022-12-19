@@ -1,11 +1,15 @@
-﻿// Задача66
-int m = 1, n = 15;
+﻿// Задача68
+int m = 2, n = 3;
 
-Console.Write($"{Summ(m, n)}");
+Console.Write($"{Accerman(m, n)}");
 
-int Summ(int left, int right)
+int Accerman(int m, int n)
 {
-    if (left >= right)
-       return left;
-    return left + Summ(left + 1, right);   
+    if (m == 0)
+       return n + 1;
+    else if (n == 0)
+       return Accerman(m - 1, 1);
+    else 
+       return Accerman(m - 1, Accerman(m, n - 1));
 }
+
